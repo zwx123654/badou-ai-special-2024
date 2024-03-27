@@ -6,7 +6,7 @@ def img_to_gray(img):
     img_gray = np.zeros((height, width), np.uint8)
     for i in range(height):
         for j in range(width):
-            img_gray[i, j] = img[i, j, 0] * 0.3 + img[i, j, 1] * 0.59 + img[i, j, 2] * 0.11
+            img_gray[i, j] = img[i, j, 0] * 0.11 + img[i, j, 1] * 0.59 + img[i, j, 2] * 0.3
     return img_gray
 
 def img_to_binary(img_gray):
